@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/Frontend/static/css/main.6f2f7ae8.css",
+    "main.js": "/Frontend/static/js/main.10a1cc2e.js",
+    "static/js/453.9ee08f12.chunk.js": "/Frontend/static/js/453.9ee08f12.chunk.js",
+    "static/media/bi13.jpg": "/Frontend/static/media/bi13.cb26ec4c853741f0a5f6.jpg",
+    "static/media/ji4.jpg": "/Frontend/static/media/ji4.089e371a8b0b17ccd429.jpg",
+    "static/media/ji5.jpg": "/Frontend/static/media/ji5.089e371a8b0b17ccd429.jpg",
+    "static/media/bi9.jpg": "/Frontend/static/media/bi9.0474e2a10f040af051bc.jpg",
+    "static/media/bi16.jpg": "/Frontend/static/media/bi16.07f3d0e0f11245099e25.jpg",
+    "static/media/bi10.jpg": "/Frontend/static/media/bi10.a40ec12ddf21666abbb6.jpg",
+    "static/media/ji1.jpg": "/Frontend/static/media/ji1.d3dce2cf83c8699b402c.jpg",
+    "static/media/ji2.jpg": "/Frontend/static/media/ji2.7e4983ac481765523c74.jpg",
+    "static/media/ji3.jpg": "/Frontend/static/media/ji3.8cbaff63a6eac5842af3.jpg",
+    "static/media/jewels.jpg": "/Frontend/static/media/jewels.8f5285146556a834e5ec.jpg",
+    "static/media/bi2.jpg": "/Frontend/static/media/bi2.a756138484fd0ee4bffb.jpg",
+    "static/media/ji6.jpg": "/Frontend/static/media/ji6.cf90515516cd5d416426.jpg",
+    "static/media/bi7.jpg": "/Frontend/static/media/bi7.382686908335642a5b4e.jpg",
+    "static/media/bi12.jpg": "/Frontend/static/media/bi12.8a4c406dcdb6887e0d76.jpg",
+    "static/media/bi11.jpg": "/Frontend/static/media/bi11.24091eecf919bc60c68f.jpg",
+    "index.html": "/Frontend/index.html",
+    "main.6f2f7ae8.css.map": "/Frontend/static/css/main.6f2f7ae8.css.map",
+    "main.10a1cc2e.js.map": "/Frontend/static/js/main.10a1cc2e.js.map",
+    "453.9ee08f12.chunk.js.map": "/Frontend/static/js/453.9ee08f12.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6f2f7ae8.css",
+    "static/js/main.10a1cc2e.js"
+  ]
+}
