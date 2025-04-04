@@ -20,7 +20,7 @@ import bridal16 from '../images/bi16.jpg'
 function BridalGallery() {
   return (
     <div>
-<h1 className='bridal'>Bridal</h1>
+<h1 className='bridalgallery'>Bridal</h1>
     
     <div className='bridal-container'>
       <img src={bridal1} alt="bridal"/>
@@ -43,38 +43,7 @@ function BridalGallery() {
     </div>
 
 
-    <footer class=" bridal-footer-section">
-  <div class=" bridal-footer-logo">
-    <h3>DK Bridal <br/>Collections</h3>
-  </div>
-  <div class="bridal-footer-links">
-    <h4>Links</h4>
-    <ul>
-      <li><a href="#">About DK</a></li>
-      <li><a href="#">Your Orders</a></li>
-      <li><a href="#">Track Your Order</a></li>
-      <li><a href="#">Bridal Gallery</a></li>
-      <li><a href="#">Shop</a></li>
-      <li><a href="#">Contact Us</a></li>
-    </ul>
-  </div>
-  <div class="bridal-footer-contact">
-    <h4>Contact</h4>
-    <p><box-icon type='solid' name='phone-call'></box-icon>+91 8798645325</p>
-    <p><box-icon name='envelope' ></box-icon> dkbridal@gmail.com</p>
-    <p><box-icon type='solid' name='sun'></box-icon>dkbridal.com</p>
-  </div>
-
-  <div class="bridal-footer-social">
-    <h4>Follow Us On</h4>
-    <ul>
-      <li><a href="#"> <box-icon type='logo' name='facebook-circle'></box-icon></a></li>
-      <li><a href="#"><box-icon type='logo' name='instagram'></box-icon></a></li>
-      <li><a href="#"><box-icon name='twitter' type='logo' ></box-icon></a></li>
-    </ul>
-
-  </div>
-</footer>
+   
     </div>
   )
 }

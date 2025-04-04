@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
-// import Jewellery from './components/Jewellery';
+
 import BridalGallery from './components/BridalGallery';
 import MyOrder from './components/MyOrder';
 import Shop from './components/Shop';
@@ -24,6 +24,9 @@ import AddToCart from "./components/addtocart";
 import CartPage from "./components/cartpage";
 import HeartButton from './components/Heartbutton';
 import Wishlist from './components/whislist';
+import Footer from './components/Footer';
+
+
 
 
 function App() {
@@ -57,8 +60,11 @@ function App() {
       
         <Route path="/" element={<HeartButton />} />
         <Route path="/wishlist" element={<Wishlist />} />
+       
+
 
       </Routes>
+      <Footer/>
     </Router>
   );
 }

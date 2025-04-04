@@ -32,7 +32,7 @@ function ContactForm() {
       <img src={sampel1} alt="Bridal Jewel1" />
 
       <div className='form'>
-        {/* <h2>Contact Us</h2> */}
+       
         <form onSubmit={handleSubmit}>
           <label>
             Name:
@@ -76,8 +76,8 @@ function ContactForm() {
               value={Address}
               onChange={(e) => setAddress(e.target.value)}
               required
-              rows="4" /* Number of visible rows */
-              cols="50" /* Number of visible columns */
+              rows="4" 
+              cols="50" 
               placeholder="Enter your Address"
             />
           </label>
@@ -115,38 +115,7 @@ function ContactForm() {
         <h2 className='dkbridal'>dkbridal@gmail.com</h2>
       </div>
 
-      <footer class=" contact-footer-section">
-  <div class="contact-footer-logo">
-    <h3>DK Bridal <br/>Collections</h3>
-  </div>
-  <div class="contact-footer-links">
-    <h4>Links</h4>
-    <ul>
-      <li><a href="#">About DK</a></li>
-      <li><a href="#">Your Orders</a></li>
-      <li><a href="#">Track Your Order</a></li>
-      <li><a href="#">Bridal Gallery</a></li>
-      <li><a href="#">Shop</a></li>
-      <li><a href="#">Contact Us</a></li>
-    </ul>
-  </div>
-  <div class="contact-footer-contact">
-    <h4>Contact</h4>
-    <p><box-icon type='solid' name='phone-call'></box-icon>+91 8798645325</p>
-    <p><box-icon name='envelope' ></box-icon> dkbridal@gmail.com</p>
-    <p><box-icon type='solid' name='sun'></box-icon>dkbridal.com</p>
-  </div>
-
-  <div class="contact-footer-social">
-    <h4>Follow Us On</h4>
-    <ul>
-      <li><a href="#"> <box-icon type='logo' name='facebook-circ`le'></box-icon></a></li>
-      <li><a href="#"><box-icon type='logo' name='instagram'></box-icon></a></li>
-      <li><a href="#"><box-icon name='twitter' type='logo' ></box-icon></a></li>
-    </ul>
-
-  </div>
-</footer>
+     
     </div>
   );
 }

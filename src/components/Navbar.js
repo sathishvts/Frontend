@@ -45,16 +45,16 @@ function Navbar() {
     setShowSuggestions(true);
   };
 
-  const handleSearchSubmit = (e) => {
-    e.preventDefault();
-    if (!searchTerm.trim()) return;
-    
-    if (suggestions.length > 0) {
-      navigate(suggestions[0].path);
-    }
-    setSearchTerm("");
-    setShowSuggestions(false);
-  };
+  // const handleSearchSubmit = (e) => {
+  //   e.preventDefault();
+  //   if (!searchTerm.trim()) return;
+
+  //   if (suggestions.length > 0) {
+  //     navigate(suggestions[0].path);
+  //   }
+  //   setSearchTerm("");
+  //   setShowSuggestions(false);
+  // };
 
   const handleSuggestionClick = (path) => {
     navigate(path);
@@ -64,13 +64,16 @@ function Navbar() {
 
   return (
     <nav>
-      <div className="Bridal">
-        <h1>
-          Dk Bridal <br />
-          Collection
-        </h1>
 
-        <div className="search-container" style={{position: 'relative'}}>
+      <div className="Bridal">
+        <div className="logo">
+          <h1>
+            Dk Bridal <br />
+            Collection
+          </h1>
+        </div>
+
+        <div className="search-container" style={{ position: 'relative' }}>
           <box-icon name="search" className="search-icon" />
           <input
             type="text"
@@ -120,68 +123,95 @@ function Navbar() {
             placeholder="Virtual Try On"
           />
         </div>
-
-        <p>
-          Call Or Whatsapp
-          <br />
-          +63445 88099
-        </p>
-      </div>
-      <div className="navbar">
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li className="list-container">
-            <Link to="/jewellery">Jewellery</Link>
-            <ul className="unoder">
-              {searchOptions
-                .filter(option => 
-                  ["bridal", "engagement", "haldi", "mehandhi", "dailywear", "sangeet", "full bridal set"].includes(option.term)
-                )
-                .map((item, index) => (
-                  <li 
-                    key={index} 
-                    onClick={() => navigate(item.path)} 
-                    style={{ cursor: "pointer" }}
-                  >
-                    {item.display}
-                  </li>
-                ))}
-            </ul>
-          </li>
-          <li>
-            <Link to="/bridal-gallery">Bridal Gallery</Link>
-          </li>
-          <li>
-            <Link to="/my-order">My Order</Link>
-          </li>
-          <li>
-            <Link to="/shop">Shop</Link>
-          </li>
-          <li>
-            <Link to="/about-us">About Us</Link>
-          </li>
-          <li>
-            <Link to="/contact-us">Contact Us</Link>
-          </li>
-        </ul>
-
-        <div className="sign-log">
-          <button
-            className="button-sign"
-            onClick={() => navigate("/signup")}
-          >
-            Sign up
-          </button>
-          <button
-            className="button-log"
-            onClick={() => navigate("/login")}
-          >
-            Login
-          </button>
+        <div className="call-or-whatsapp">
+          <p>
+            Call Or Whatsapp
+            <br />
+            +63445 88099
+          </p>
         </div>
       </div>
+      <div className="navbar">
+        
+        <ul>
+          
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+          
+
+          
+            <li className="list-container">
+              <Link to="/jewellery">Jewellery</Link>
+              <ul className="unoder">
+                {searchOptions
+                  .filter(option =>
+                    ["bridal", "engagement", "haldi", "mehandhi", "dailywear", "sangeet", "full bridal set"].includes(option.term)
+                  )
+                  .map((item, index) => (
+                    <li
+                      key={index}
+                      onClick={() => navigate(item.path)}
+                      style={{ cursor: "pointer" }}
+                    >
+                      {item.display}
+                    </li>
+                  ))}
+
+              </ul>
+
+            </li>
+          
+
+
+            <li>
+              <Link to="/bridal-gallery">Bridal Gallery</Link>
+            </li>
+
+        
+            <li>
+              <Link to="/my-order">My Order</Link>
+            </li>
+         
+
+
+         
+            <li>
+              <Link to="/shop">Shop</Link>
+            </li>
+          
+
+            <li>
+              <Link to="/about-us">About Us</Link>
+            </li>
+          
+
+          
+            <li>
+              <Link to="/contact-us">Contact Us</Link>
+            </li>
+       
+
+
+        </ul>
+      </div>
+
+      <div className="sign-log">
+        <button
+          className="button-sign"
+          onClick={() => navigate("/signup")}
+        >
+          Sign up
+        </button>
+        <button
+          className="button-log"
+          onClick={() => navigate("/login")}
+        >
+          Login
+        </button>
+
+      </div>
+      
     </nav>
   );
 }

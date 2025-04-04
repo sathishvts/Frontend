@@ -61,7 +61,7 @@ function Shop() {
     <div className="shop-container">
       <h1 className="ShopUs">ShopUs</h1>
 
-      {/* Wishlist Header */}
+      
       <div className="wishlist-header">
         <button onClick={goToWishlist} className="wishlist-btn">
           <box-icon name="heart" type="solid" color={wishlist.length ? 'red' : 'gray'}></box-icon>
@@ -69,7 +69,7 @@ function Shop() {
         </button>
       </div>
 
-      {/* Products Grid - 6 items */}
+      
       <div className="grid-container">
         {products.map((product) => {
           const inWishlist = wishlist.some((item) => item.id === product.id);
@@ -103,7 +103,7 @@ function Shop() {
         })}
       </div>
 
-      {/* View Cart Button */}
+      
       {totalItems > 0 && (
         <button className="view-cart-btn" onClick={handleGoToCart}>
           🛒 View Cart ({totalItems})
